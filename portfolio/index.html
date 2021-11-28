@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width" />
         <title>Your Name Here</title>
         <link rel="stylesheet" type="text/css" href="CSS/profilo.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet/sample_portfolio.css">
     </head>
 
     <!--Body-->
@@ -18,6 +19,7 @@
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
             <a href="#Contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -100,6 +102,8 @@
                 <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
                         <input type="text" placeholder="Please enter your name here">
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
                     <label>Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
                     <label>Message:</label>
@@ -116,5 +120,6 @@
                 <br>
             </p>
         </footer>
+        <script src="JS/sample_portfolio.js"></script>
     </body>
 </html>
